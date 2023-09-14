@@ -10,11 +10,9 @@ export default function HomePage() {
             <h1 className="text-[80px] text-wrap">COUNSULTING</h1>
             <h1 className="text-[80px] text-wrap">SERVICES</h1>
           </div>
-          <div className="mt-[30px] text-lg w-[500px]">
+          <div className="mt-[30px] text-lg w-[550px]">
             <p className="">
-              Venture into the realm of sigma innovation, master process
-              optimization, decipher invaluable insights and drive profitability
-              with trailblazing sigma technology services.
+            Explore the world of sigma innovation, excel in optimizing processes, unlock invaluable insights, and enhance profitability through cutting-edge sigma technology services.
             </p>
           </div>
           <div className="my-[60px] flex gap-6 text-xl">
@@ -36,9 +34,7 @@ export default function HomePage() {
           </div>
           <div className=" border border-[#CBD5E1] rounded leading-10 px-[20px] py-[30px] mt-10 text-center w-[50%]">
             <h1 className="text-[#000]">
-              sigma technology consulting services tailor-made to suit the
-              realities of your organization, increase competitive advantage,
-              and support your most ambitious goals.
+              Customized Sigma Technology consulting services designed to align with your organization&apos;s unique needs, elevate your competitive edge, and bolster your most ambitious objectives.
             </h1>
           </div>
         </div>
@@ -47,8 +43,8 @@ export default function HomePage() {
       <div className="bg-background_2 bg-cover bg-no-repeat bg-fixed  h-[400px] flex justify-center">
         <div className="w-[1200px] grid place-content-center text-center">
           <div className="text-[50px] font-extrabold">
-            <h1>FINDING THE RIGHT SOLUTIONS BEGINS</h1>
-            <h1>WITH <span className="text-[#56c2f8]">ASKING THE RIGHT QUESTIONS</span>.</h1>
+            <h1>DISCOVERING THE CORRECT SOLUTIONS COMMENCES BY <span className="text-[#56c2f8]">INQUIRING ABOUT THE PRECISE QUESTIONS</span>.</h1>
+            
           </div>
         </div>
       </div>
@@ -61,9 +57,7 @@ export default function HomePage() {
           </div>
           <div className=" border border-[#CBD5E1] rounded leading-10 px-[20px] py-[30px] mt-10 text-center w-[50%]">
             <h1 className="text-[#000]">
-              sigma technology consulting services tailor-made to suit the
-              realities of your organization, increase competitive advantage,
-              and support your most ambitious goals.
+              Customized Sigma Technology consulting services designed to align with your organization&apos;s unique needs, elevate your competitive edge, and bolster your most ambitious objectives.
             </h1>
           </div>
         </div>
