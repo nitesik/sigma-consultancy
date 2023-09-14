@@ -1,20 +1,20 @@
 export default function HomePage() {
   return (
     <div>
-      <div className="firstImg min-h-screen flex justify-center">
+      <div className="bg-[url('../../public/wallpaper1.jpg')] bg-cover bg-no-repeat bg-fixed min-h-screen flex justify-center">
         <div className="w-[1200px] mt-[150px]">
           <div className="font-bold">
             <h1 className="text-[80px] text-[#56c2f8] text-wrap">
-              DIGITAL TECHNOLOGY
+              SIGMA TECHNOLOGY
             </h1>
             <h1 className="text-[80px] text-wrap">COUNSULTING</h1>
             <h1 className="text-[80px] text-wrap">SERVICES</h1>
           </div>
           <div className="mt-[30px] text-lg w-[500px]">
             <p className="">
-              Venture into the realm of digital innovation, master process
+              Venture into the realm of sigma innovation, master process
               optimization, decipher invaluable insights and drive profitability
-              with trailblazing digital technology services.
+              with trailblazing sigma technology services.
             </p>
           </div>
           <div className="my-[60px] flex gap-6 text-xl">
@@ -36,7 +36,7 @@ export default function HomePage() {
           </div>
           <div className=" border border-[#CBD5E1] rounded leading-10 px-[20px] py-[30px] mt-10 text-center w-[50%]">
             <h1 className="text-[#000]">
-              Digital technology consulting services tailor-made to suit the
+              sigma technology consulting services tailor-made to suit the
               realities of your organization, increase competitive advantage,
               and support your most ambitious goals.
             </h1>
@@ -44,7 +44,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="secondImg h-[400px] flex justify-center">
+      <div className="bg-[url('../../public/wallpaper2.jpg')] bg-cover bg-no-repeat bg-fixed  h-[400px] flex justify-center">
         <div className="w-[1200px] grid place-content-center text-center">
           <div className="text-[50px] font-extrabold">
             <h1>FINDING THE RIGHT SOLUTIONS BEGINS</h1>
@@ -61,7 +61,7 @@ export default function HomePage() {
           </div>
           <div className=" border border-[#CBD5E1] rounded leading-10 px-[20px] py-[30px] mt-10 text-center w-[50%]">
             <h1 className="text-[#000]">
-              Digital technology consulting services tailor-made to suit the
+              sigma technology consulting services tailor-made to suit the
               realities of your organization, increase competitive advantage,
               and support your most ambitious goals.
             </h1>

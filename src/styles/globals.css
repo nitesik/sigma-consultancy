@@ -42,14 +42,14 @@ body {
 }
 
 .firstImg {
-  background-image: url(../assets/planet.jpg);
+  /* background-image: url(../assets/planet.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .secondImg {
-  background-image: url(../assets/wallpaper2.jpg);
+  /* background-image: url(../assets/wallpaper2.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
