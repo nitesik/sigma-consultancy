@@ -1,11 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* https://followoz.com/wp-content/uploads/2022/12/contback.jpg */
+/* https://followoz.com/wp-content/uploads/2022/12/starback.jpg */
+/* https://www.freepik.com/free-photos-vectors/space-cartoon-wallpaper */
 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  scroll-behavior: auto;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,12 +23,34 @@
   }
 }
 
+* nav {
+  transition: all 200ms ease-in-out;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  
+
+}
+
+.firstImg {
+  background-image: url(../assets/planet.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.secondImg {
+  background-image: url(../assets/wallpaper2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
