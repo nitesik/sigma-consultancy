@@ -10,8 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage:{
-        'background_1': "url('/public/wallpaper1.jpg')",
-        'background_2': "url('./src/assets/background_2.jpg')",
+        'background_1': "url('/wallpaper1.jpg')",
+        'background_2': "url('/wallpaper2.jpg')",
         
       },
     },

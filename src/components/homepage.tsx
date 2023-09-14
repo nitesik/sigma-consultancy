@@ -1,7 +1,7 @@
 export default function HomePage() {
   return (
     <div>
-      <div className="bg-[url('../../public/wallpaper1.jpg')] bg-cover bg-no-repeat bg-fixed min-h-screen flex justify-center">
+      <div className="bg-background_1 bg-cover bg-no-repeat bg-fixed min-h-screen flex justify-center">
         <div className="w-[1200px] mt-[150px]">
           <div className="font-bold">
             <h1 className="text-[80px] text-[#56c2f8] text-wrap">
@@ -44,7 +44,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="bg-[url('../../public/wallpaper2.jpg')] bg-cover bg-no-repeat bg-fixed  h-[400px] flex justify-center">
+      <div className="bg-background_2 bg-cover bg-no-repeat bg-fixed  h-[400px] flex justify-center">
         <div className="w-[1200px] grid place-content-center text-center">
           <div className="text-[50px] font-extrabold">
             <h1>FINDING THE RIGHT SOLUTIONS BEGINS</h1>
