@@ -12,6 +12,7 @@ const config: Config = {
       backgroundImage:{
         'background_1': "url('/wallpaper1.jpg')",
         'background_2': "url('/wallpaper2.jpg')",
+        'background_3': "url('/wallpaper3.jpg')",
         
       },
     },
