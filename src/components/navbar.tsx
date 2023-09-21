@@ -11,7 +11,7 @@ export default function Navbar() {
 
   const t = router.locale as keyof SiteConfig;
 
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   const [scrollY, setScrollY] = useState(0);
   const [width, setWidth] = useState(0);
@@ -27,12 +27,17 @@ export default function Navbar() {
   useEffect(() => {
     window.addEventListener("scroll", getScrollYPos);
     window.addEventListener("resize", getWidth);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", getScrollYPos);
+    window.addEventListener("resize", getWidth);
 
     if (width > 1000 && isMenuOpen) setIsMenuOpen(false);
   }, [scrollY, width]);
   
   return (
-    <nav className={`select-none flex w-full justify-center fixed  ${scrollY  <= 50 && !isMenuOpen ? "bg-transparent text-[#fff] py-3" : "bg-[#fff] text-[#000] border-b border-[#000]"} z-10`}>
+    <nav className={`flex w-full justify-center fixed  ${scrollY  <= 50 && !isMenuOpen ? "bg-transparent text-[#fff] py-3" : "bg-[#fff] text-[#000] border-b border-[#000]"} z-10`}>
       <div className="z-50 w-full px-5 lg:px-0 lg:w-[1000px] xl:w-[1200px] flex justify-between py-5 items-center font-[700] text-lg ">
         <Link href="/" locale={t}><Image src={icons.sigma_logo} width={175} height={226} alt="logo" className={` ${scrollY <= 50 && !isMenuOpen ? "invert" : ""}`} /></Link>
         <div className="hidden lg:flex gap-5">
