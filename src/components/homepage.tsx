@@ -2,6 +2,7 @@ import { icons } from "@/utils/icons";
 import { SiteConfig } from "@/utils/site";
 import { homepage } from "@/utils/translation";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function HomePage() {
@@ -49,35 +50,14 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="bg-background_2 lg:bg-cover bg-no-repeat lg:bg-fixed  h-fit flex justify-center text-[#fff]">
+      <div className="bg-sky-800 lg:bg-cover bg-no-repeat lg:bg-fixed h-fit flex justify-center text-[#fff]">
         <div className="w-[600px] lg:w-[1000px] xl:w-[1200px] grid place-content-center text-center">
           <div className="py-[100px] lg:w-[1000px] xl:w-[1200px] ">
             <h1 className="text-[30px] lg:text-[50px] text-center font-extrabold ">
               Explore Further Details About Our Extensive Array of Consulting Services:
             </h1>
             <div className="grid lg:grid-cols-2 xl:grid-cols-3 justify-items-center mt-10 gap-y-10 text-start">
-              {/* <div className="bg-[#ffffff33] px-5 lg:px-10 py-7 shado
-              w-md rounded-3xl h-[450px] w-[350px] items-center lg:items-start flex flex-col justify-between">
-                <div className="lg:inline flex flex-col items-center text-center lg:text-start">
-                  <Image
-                    className="invert "
-                    src={icons.enterprise}
-                    alt="pic"
-                    width={54}
-                    height={54}
-                  />
-                  <h1 className="mt-5 mb-3 text-xl font-extrabold">
-                    Enterprise Application Integration (EAI)
-                  </h1>
-                  <p className="text-base font-[400]">
-                    Integrate isolated systems and databases to facilitate
-                    smooth communication between Supply Chain Management (SCM),
-                    Customer Relationship Management (CRM), and other separate
-                    systems, enhancing operational scalability to boost revenue.
-                  </p>
-                </div>
-                <p className="text-[#56c2f8] font-extrabold">View More</p>
-              </div> */}
+              
               {homepage.services.map(item => <div key={item.name.en} className="bg-[#ffffff33] px-5 lg:px-10 py-7 shado
               w-md rounded-3xl h-[550px] w-[350px] items-center lg:items-start flex flex-col justify-between">
                 <div className="lg:inline flex flex-col items-center text-center lg:text-start">
@@ -95,7 +75,7 @@ export default function HomePage() {
                    {item.description[t]}
                   </p>
                 </div>
-                <p className="text-[#56c2f8] font-extrabold">View More</p>
+                <Link href={"/about"} className="text-[#56c2f8] font-extrabold">View More</Link>
               </div>)}
             </div>
           </div>
