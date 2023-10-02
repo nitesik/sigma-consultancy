@@ -50,7 +50,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="bg-sky-800 lg:bg-cover bg-no-repeat lg:bg-fixed h-fit flex justify-center text-[#fff]">
+      <div className="bg-[#01091e] lg:bg-cover bg-no-repeat lg:bg-fixed h-fit flex justify-center text-[#fff]">
         <div className="w-[600px] lg:w-[1000px] xl:w-[1200px] grid place-content-center text-center">
           <div className="py-[100px] lg:w-[1000px] xl:w-[1200px] ">
             <h1 className="text-[30px] lg:text-[50px] text-center font-extrabold ">
