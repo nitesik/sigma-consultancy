@@ -55,8 +55,8 @@ export default function Navbar() {
         </div>
       </div>
       {isMenuOpen && <div className="lg:hidden grid place-content-center z-40 fixed top-0 left-0 h-screen w-screen bg-[#fff] text-center">
-        <div className="h-[45vh] flex flex-col justify-between text-[23px]">
-          {siteConfig.getHeaderLinks().map(item => <Link key={item.en} href={item.href} className={`${router.asPath === item.href ? "text-primary" : ""}`}>{item[t]}</Link>)}
+        <div className="h-fit gap-[30px] flex flex-col justify-between text-[23px]">
+          {siteConfig.getHeaderLinks().map(item => <Link onClick={() => setIsMenuOpen(false)} key={item.en} href={item.href} className={`${router.asPath === item.href ? "text-primary" : ""}`}>{item[t]}</Link>)}
         </div>
         <div className="flex gap-1 justify-center text-[20px] mt-10 cursor-pointer text-center">
             <p className={`${t === "en" ? "" : "text-[#737373]"}`} onClick={() => router.push(router.asPath, "", { locale: "en" })}>EN</p>
