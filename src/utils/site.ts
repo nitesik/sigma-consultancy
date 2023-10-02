@@ -6,24 +6,19 @@ export const siteConfig = {
   getHeaderLinks: () => {
     const items = [
       {
-          en: "Services",
+          en: "Home",
           cn: '服务',
-          href: "/services"
+          href: "/"
         },
         {
-          en: "Industries",
+          en: "Visa Registration",
           cn: '行业',
-          href: "/industries"
+          href: "/visa"
         },
         {
-          en: "Partners",
+          en: "Maid Service",
           cn: '伙伴',
-          href: "/partners"
-        },
-        {
-          en: "Resources",
-          cn: '资源',
-          href: "/resources"
+          href: "/maid"
         },
         {
           en: "About",

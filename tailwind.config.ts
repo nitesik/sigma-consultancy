@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        "primary": "#56c2f8"
+      },
       backgroundImage:{
         'background_1': "url('/wallpaper1.jpg')",
         'background_2': "url('/wallpaper2.jpg')",

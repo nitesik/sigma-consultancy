@@ -11,14 +11,13 @@ export default function Footer() {
   const t = router.locale as keyof SiteConfig;
 
   return (
-    <div className="bg-[#01091e] flex justify-center">
+    <div className="bg-[#01091e] text-white flex justify-center">
       <div className="text-center grid  lg:text-start lg:w-[1000px] xl:w-[1200px] my-[50px] lg:my-[100px]">
         <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between">
           <div className="text-sm grid gap-2 place-content-center">
             <Image src={icons.sigma_logo} width={175} height={226} alt="logo" className="invert mb-5" />
-            <p>Country Global Headquarters</p>
-            <p>Buddha Nagar, Alistonia Estate</p>
-            <p>Unitech Habitat, 803</p>
+            <p>Shop7, 1/f, Wun Fat Bldg</p>
+            <p>8 Wang Fat Path, Yuen Long</p>
           </div>
           <div className="flex flex-col gap-2">
             {siteConfig.getHeaderLinks().slice(0, 3).map(item => (
