@@ -30,10 +30,10 @@ export default function Maid() {
         </div>
       </div>
 
-      <div className="flex justify-center py-[100px]">
+      <div className="flex justify-center py-[20px] lg:py-[100px]">
         <div className="w-full lg:w-[1000px] xl:w-[1200px]">
           <form className="lg:grid mt-10 lg:mt-0 px-5 flex flex-col items-start text-start w-full lg:text-start lg:w-[70%] gap-5">
-            <div className="flex w-full flex-none gap-2">
+            <div className="flex w-full flex-col lg:flex-row flex-none gap-2">
               <div className="flex-1 ">
                 <label
                   className="text-xl flex mb-2 text-primary font-semibold"
