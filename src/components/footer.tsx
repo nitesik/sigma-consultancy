@@ -14,7 +14,7 @@ export default function Footer() {
     <div className="bg-[#01091e] text-white flex justify-center">
       <div className="text-center grid  lg:text-start lg:w-[1000px] xl:w-[1200px] my-[50px] lg:my-[100px]">
         <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row justify-between">
-          <div className="text-sm grid gap-2 place-content-center">
+          <div className="text-sm flex flex-col items-center lg:grid gap-3 place-content-center">
             <Image src={icons.sigma_logo} width={175} height={226} alt="logo" className="invert mb-5" />
             <p>Shop7, 1/f, Wun Fat Bldg</p>
             <p>8 Wang Fat Path, Yuen Long</p>
@@ -23,9 +23,14 @@ export default function Footer() {
             {siteConfig.getHeaderLinks().slice(0, 3).map(item => (
             <Link key={item.en} href={item.href}>{item[t]}</Link>
             ))}
-          </div>
-          <div className="flex flex-col gap-2">
+            <div className="grid lg:hidden gap-2">
             {siteConfig.getHeaderLinks().slice(3, 6).map(item => (
+            <Link key={item.en} href={item.href}>{item[t]}</Link>
+            ))}
+            </div>
+          </div>
+          <div className="hidden lg:flex flex-col gap-2">
+          {siteConfig.getHeaderLinks().slice(3, 6).map(item => (
             <Link key={item.en} href={item.href}>{item[t]}</Link>
             ))}
           </div>
