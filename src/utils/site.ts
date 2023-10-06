@@ -11,12 +11,12 @@ export const siteConfig = {
           href: "/"
         },
         {
-          en: "Visa Registration",
+          en: "Consultancy Services",
           cn: '行业',
-          href: "/visa"
+          href: "/consultancy"
         },
         {
-          en: "Maid Service",
+          en: "Maid Registration",
           cn: '伙伴',
           href: "/maid"
         },

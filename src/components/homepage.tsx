@@ -1,6 +1,7 @@
 import { icons } from "@/utils/icons";
 import { SiteConfig } from "@/utils/site";
 import { homepage } from "@/utils/translation";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -10,6 +11,9 @@ export default function HomePage() {
   const t = router.locale as keyof SiteConfig;
   return (
     <div className="text-[#000]">
+      <Head>
+        <title>Sigma Consultancy</title>
+      </Head>
       <div className="px-3 lg:px-0 bg-background_3 lg:bg-cover bg-no-repeat lg:bg-fixed lg:min-h-screen flex justify-center text-[#fff]">
         <div className="text-center w-[600px] lg:text-start lg:w-[1000px] xl:w-[1200px] mt-[125px] lg:mt-[150px]">
           <div className="text-[40px] lg:text-[80px] font-bold">
@@ -50,37 +54,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="bg-[#01091e] lg:bg-cover bg-no-repeat lg:bg-fixed h-fit flex justify-center text-[#fff]">
-        <div className="w-[600px] lg:w-[1000px] xl:w-[1200px] grid place-content-center text-center">
-          <div className="py-[100px] lg:w-[1000px] xl:w-[1200px] ">
-            <h1 className="text-[30px] lg:text-[50px] text-center font-extrabold ">
-              Explore Further Details About Our Extensive Array of Consulting Services:
-            </h1>
-            <div className="grid lg:grid-cols-2 xl:grid-cols-3 justify-items-center mt-10 gap-y-10 text-start">
-              
-              {homepage.services.map(item => <div key={item.name.en} className="bg-[#ffffff33] px-5 lg:px-10 py-7 shado
-              w-md rounded-3xl h-[550px] w-[350px] items-center lg:items-start flex flex-col justify-between">
-                <div className="lg:inline flex flex-col items-center text-center lg:text-start">
-                  <Image
-                    className=""
-                    src={item.icon}
-                    alt="pic"
-                    width={54}
-                    height={54}
-                  />
-                  <h1 className="mt-5 mb-3 text-xl font-extrabold">
-                    {item.name[t]}
-                  </h1>
-                  <p className="text-base font-[400]">
-                   {item.description[t]}
-                  </p>
-                </div>
-                <Link href={"/about"} className="text-[#56c2f8] font-extrabold">View More</Link>
-              </div>)}
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
       <div className="bg-gradient-to-b from-[#F6FCFF] to-[#fff] flex justify-center py-[50px] lg:py-[100px]">
         <div className="px-4 lg:px-0 w-[600px] lg:w-[1000px] xl:w-[1200px] grid place-content-center text-center">

@@ -8,6 +8,8 @@ import feature from "@/assets/feature.png";
 import data_visualization from "@/assets/data-visualization.png";
 import close from "@/assets/close.svg";
 import menu from "@/assets/menu.svg";
+import us_flag from "@/assets/us.jpg";
+import china_flag from "@/assets/china.jpg";
 
 export const icons = {
   logo,
@@ -18,5 +20,7 @@ export const icons = {
   feature,
   data_visualization,
   close,
-  menu
+  menu,
+  us_flag,
+  china_flag,
 };

@@ -1,5 +1,6 @@
 import { SiteConfig } from "@/utils/site";
 import { about, homepage } from "@/utils/translation";
+import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
@@ -8,6 +9,9 @@ export default function About() {
 
   return (
     <div className="text-[#000]">
+      <Head>
+        <title>About - Sigma Consultancy</title>
+      </Head>
       <div className="px-3 lg:px-0 bg-background_3 pb-[100px] lg:bg-cover bg-no-repeat lg:bg-fixed lg:min-h-fit flex justify-center text-[#fff]">
         <div className="text-center w-[600px] lg:text-start lg:w-[1000px] xl:w-[1200px] mt-[125px] lg:mt-[150px]">
           <div className="text-[40px] lg:text-[80px] font-bold">
