@@ -68,7 +68,7 @@ export default function Navbar() {
               </Link>
             ))}
           </div>
-          <div className="flex gap-1 cursor-pointer">
+          <div className="flex gap-1 items-center cursor-pointer">
             <Image
               src={icons.us_flag}
               alt="flag"
@@ -84,6 +84,14 @@ export default function Navbar() {
               height={45}
               className={`${t === "cn" ? "bg-primary" : ""} p-1.5 rounded`}
               onClick={() => router.push(router.asPath, "", { locale: "cn" })}
+            ></Image>
+            <Image
+              src={icons.nepal_flag}
+              alt="flag"
+              width={30}
+              height={30}
+              className={`${t === "ne" ? "bg-primary" : ""} p-1.5 rounded`}
+              onClick={() => router.push(router.asPath, "", { locale: "ne" })}
             ></Image>
           </div>
         </div>
@@ -114,9 +122,31 @@ export default function Navbar() {
               </Link>
             ))}
           </div>
-          <div className="flex gap-1 justify-center text-[20px] mt-10 cursor-pointer text-center">
-          <Image src={icons.us_flag} alt="flag" width={45} height={45} className={`${t === "en" ? "bg-primary" : ""} p-1.5 rounded`} onClick={() => router.push(router.asPath, "", { locale: "en" })}></Image>
-            <Image src={icons.china_flag} alt="flag" width={45} height={45} className={`${t === "cn" ? "bg-primary" : ""} p-1.5 rounded`} onClick={() => router.push(router.asPath, "", { locale: "cn" })}></Image>
+          <div className="flex gap-1 justify-center items-center text-[20px] mt-10 cursor-pointer text-center">
+            <Image
+              src={icons.us_flag}
+              alt="flag"
+              width={45}
+              height={45}
+              className={`${t === "en" ? "bg-primary" : ""} p-1.5 rounded`}
+              onClick={() => router.push(router.asPath, "", { locale: "en" })}
+            ></Image>
+            <Image
+              src={icons.china_flag}
+              alt="flag"
+              width={45}
+              height={45}
+              className={`${t === "cn" ? "bg-primary" : ""} p-1.5 rounded`}
+              onClick={() => router.push(router.asPath, "", { locale: "cn" })}
+            ></Image>
+            <Image
+              src={icons.nepal_flag}
+              alt="flag"
+              width={35}
+              height={35}
+              className={`${t === "ne" ? "bg-primary" : ""} p-1.5 rounded`}
+              onClick={() => router.push(router.asPath, "", { locale: "ne" })}
+            ></Image>
           </div>
         </div>
       )}

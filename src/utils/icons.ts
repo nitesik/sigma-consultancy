@@ -10,6 +10,7 @@ import close from "@/assets/close.svg";
 import menu from "@/assets/menu.svg";
 import us_flag from "@/assets/us.jpg";
 import china_flag from "@/assets/china.jpg";
+import nepal_flag from "@/assets/nepal.jpg"
 
 export const icons = {
   logo,
@@ -23,4 +24,5 @@ export const icons = {
   menu,
   us_flag,
   china_flag,
+  nepal_flag
 };

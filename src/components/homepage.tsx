@@ -18,10 +18,10 @@ export default function HomePage() {
         <div className="text-center w-[600px] lg:text-start lg:w-[1000px] xl:w-[1200px] mt-[125px] lg:mt-[150px]">
           <div className="text-[40px] lg:text-[80px] font-bold">
             <h1 className=" text-primary text-wrap">
-              SIGMA VISA
+              SIGMA EMPLOYMENT 
             </h1>
             <h1 className="text-wrap">
-              COUNSULTANTS <br /> SERVICES
+            VISA COUNSULTANTS <br /> SERVICES
             </h1>
           </div>
           <div className="mt-[30px] text-lg lg:w-[550px]">
@@ -72,6 +72,13 @@ export default function HomePage() {
               tackle their individual business obstacles.
             </p>
           </div>
+        </div>
+      </div>
+
+      <div className="bg-gradient-to-b from-[#F6FCFF] to-[#fff] flex justify-center py-[50px] lg:py-[100px]">
+        <div className="px-4 lg:px-0 w-[600px] lg:w-[1000px] xl:w-[1200px] flex text-center">
+          <div className="bg-red-500 flex-1">hi</div>
+          <div className="bg-green-500 flex-1 ml-auto">bye</div>
         </div>
       </div>
     </div>

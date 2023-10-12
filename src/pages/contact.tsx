@@ -29,7 +29,8 @@ export default function Contact() {
             </h1>
           </div>
           <div className="text-[40px] lg:text-[80px] font-bold">
-            <h1 className=" text-primary text-wrap">SIGMA VISA CONSULTANTS</h1>
+            <h1 className=" text-primary text-wrap">SIGMA EMPLOYMENT</h1>
+            <h1 className=" text-primary text-wrap">VISA CONSULTANTS</h1>
           </div>
         </div>
       </div>
