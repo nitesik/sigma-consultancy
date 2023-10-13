@@ -1,4 +1,7 @@
+import { SiteConfig } from "@/utils/site";
+import { maid_registration } from "@/utils/translation";
 import Head from "next/head";
+import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 
 export default function Maid() {
@@ -6,9 +9,9 @@ export default function Maid() {
   const [contract, setContract] = useState("Finish Contract");
   const [toBeConfirmed, setToBeConfirmed] = useState(false);
 
-  useEffect(() => {
-    console.log(nationality);
-  });
+  const router = useRouter();
+  
+  const t = router.locale as keyof SiteConfig;
 
   return (
     <div className="">
@@ -19,16 +22,12 @@ export default function Maid() {
         <div className="text-center w-[600px] lg:text-start lg:w-[1000px] xl:w-[1200px] mt-[125px] lg:mt-[150px]">
           <div className="mt-[30px] text-lg lg:w-[50%] ">
             <h1 className="text-[30px] lg:text-[50px] leading-snug">
-              Maid Service
+              {maid_registration.header_one[t]}
             </h1>
           </div>
           <div className="mt-[30px] text-lg lg:w-[550px]">
             <p className="">
-              Our maid registering form is a comprehensive tool designed to help
-              you find the perfect domestic helper who meets your specific needs
-              and preferences. By providing us with essential information
-              through this form, you enable us to make the best match for you
-              and ensure a successful hiring process.{" "}
+              {maid_registration.description_one[t]}
             </p>
           </div>
         </div>
@@ -43,7 +42,7 @@ export default function Maid() {
                   className="text-xl flex mb-2 text-primary font-semibold"
                   htmlFor="name"
                 >
-                  Full Name*
+                  {maid_registration.full_name[t]}*
                 </label>
                 <input
                   required
@@ -57,7 +56,7 @@ export default function Maid() {
                   className="text-xl flex mb-2 text-primary font-semibold"
                   htmlFor="email"
                 >
-                  Email Address*
+                  {maid_registration.email[t]}*
                 </label>
                 <input
                   required
@@ -71,7 +70,7 @@ export default function Maid() {
                   className="text-xl mb-2 text-primary font-semibold"
                   htmlFor="age"
                 >
-                  Age*
+                  {maid_registration.age[t]}*
                 </label>
                 <input
                   required
@@ -87,7 +86,7 @@ export default function Maid() {
                   className="text-xl flex mb-2 text-primary font-semibold"
                   htmlFor="tel"
                 >
-                  Telephone Number*
+                  {maid_registration.phone_number[t]}*
                 </label>
                 <input
                   required
@@ -101,7 +100,7 @@ export default function Maid() {
                   className="text-xl mb-2 text-primary font-semibold"
                   htmlFor="age"
                 >
-                  Age*
+                  {maid_registration.age[t]}*
                 </label>
                 <input
                   id="age"
@@ -112,7 +111,7 @@ export default function Maid() {
             </div>
             <div className="flex flex-col gap-2 w-full">
               <h1 className="text-xl mb-2 text-primary font-semibold">
-                Nationality
+                {maid_registration.nationality[t]}
               </h1>
               <div className="flex gap-5">
                 <div className="flex gap-2">
@@ -125,7 +124,7 @@ export default function Maid() {
                     name="nationality"
                     defaultChecked
                   />
-                  <label htmlFor="Indonesian">Indonesian</label>
+                  <label htmlFor="Indonesian">{maid_registration.indonesian[t]}</label>
                 </div>
                 <div className="flex gap-2">
                   <input
@@ -134,7 +133,7 @@ export default function Maid() {
                     name="nationality"
                     onChange={(e) => setNationality(e.target.value)}
                   />
-                  <label>Filipino</label>
+                  <label>{maid_registration.filipino[t]}</label>
                 </div>
                 <div className="flex gap-2">
                   <input
@@ -144,7 +143,7 @@ export default function Maid() {
                     type="radio"
                     name="nationality"
                   />
-                  <label>Others</label>
+                  <label>{maid_registration.others[t]}</label>
                 </div>
               </div>
 
@@ -159,7 +158,7 @@ export default function Maid() {
 
             <div className="flex flex-col gap-2 w-full">
               <h1 className="text-xl mb-2 text-primary font-semibold">
-                Contract Type
+                {maid_registration.contract_type[t]}
               </h1>
               <div className="flex gap-5">
                 <div className="flex gap-2 items-start lg:items-center">
@@ -173,7 +172,7 @@ export default function Maid() {
                     name="contract"
                     defaultChecked
                   />
-                  <label htmlFor="finish">Finish Contract</label>
+                  <label htmlFor="finish">{maid_registration.finish_contract[t]}</label>
                 </div>
                 <div className="flex gap-2 items-start lg:items-center">
                   <input
@@ -184,7 +183,7 @@ export default function Maid() {
                     name="contract"
                     onChange={(e) => setContract(e.target.value)}
                   />
-                  <label htmlFor="terminate">Terminate Contract</label>
+                  <label htmlFor="terminate">{maid_registration.terminate_contract[t]}</label>
                 </div>
                 <div className="flex gap-2 items-start lg:items-center">
                   <input
@@ -195,14 +194,14 @@ export default function Maid() {
                     name="contract"
                     onChange={(e) => setContract(e.target.value)}
                   />
-                  <label htmlFor="not">Currently not in HK</label>
+                  <label htmlFor="not">{maid_registration.currently_not_in_hk[t]}</label>
                 </div>
               </div>
             </div>
 
             <div className="flex flex-col gap-2 w-full">
               <label className="text-xl mb-2 text-primary font-semibold">
-                Date of Termination
+                {maid_registration.date_of_termination[t]}
               </label>
               <div className="flex items-start lg:items-center lg:flex-row flex-col gap-5">
                 {toBeConfirmed || (
@@ -224,7 +223,7 @@ export default function Maid() {
                     checked={toBeConfirmed}
                     onChange={(e) => setToBeConfirmed(e.target.checked)}
                   />
-                  <label>To be confirmed</label>
+                  <label>{maid_registration.to_be_confirmed[t]}</label>
                 </div>
               </div>
             </div>
@@ -234,7 +233,7 @@ export default function Maid() {
                 className="text-xl mb-2 text-primary font-semibold"
                 htmlFor="message"
               >
-                Message*
+                {maid_registration.message[t]}*
               </label>
               <textarea
                 id="message"
@@ -243,29 +242,18 @@ export default function Maid() {
             </div>
 
             <button className="bg-primary w-fit px-10 text-white font-semibold py-4 rounded-full">
-              Submit
+              {maid_registration.submit[t]}
             </button>
           </form>
 
           <div className="mt-16 text-lg grid gap-7 px-5 lg:px-0 text-center lg:text-start">
-            <h1 className="text-[32px] font-semibold">Note</h1>
+            <h1 className="text-[32px] font-semibold">{maid_registration.header_two[t]}</h1>
             <p>
-              A well-structured and detailed maid registering form is crucial
-              for both domestic helpers and employers. It helps employers make
-              informed decisions when selecting a domestic helper by providing a
-              clear overview of the maid&apos;s qualifications, experience, and
-              expectations. For domestic helpers, it serves as a platform to
-              showcase their skills and find suitable employment opportunities
-              abroad.
+              {maid_registration.description_two[t]}
             </p>
 
             <p>
-              At Sigma Consultancy, we understand the importance of a
-              comprehensive maid registering form and provide guidance and
-              support to ensure that the information presented accurately
-              represents the domestic helper&apos;s qualifications and
-              preferences. Our goal is to facilitate successful matches that
-              benefit both parties and create harmonious working relationships.
+              {maid_registration.description_three[t]}
             </p>
           </div>
         </div>

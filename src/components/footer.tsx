@@ -36,7 +36,9 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-3">
             <h1>CONTACT US</h1>
-            <p>9843932489</p>
+            <p>+852 5661 6822</p>
+            <p>+852 2792 3633</p>
+            <p>+852 3925 7035</p>
           </div>
         </div>
         <p className="w-full text-center mt-10">© Copyright {new Date().getFullYear()} Sigma Consultancy</p>

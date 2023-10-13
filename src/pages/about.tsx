@@ -15,18 +15,14 @@ export default function About() {
       <div className="px-3 lg:px-0 bg-background_3 pb-[100px] lg:bg-cover bg-no-repeat lg:bg-fixed lg:min-h-fit flex justify-center text-[#fff]">
         <div className="text-center w-[600px] lg:text-start lg:w-[1000px] xl:w-[1200px] mt-[125px] lg:mt-[150px]">
           <div className="text-[40px] lg:text-[80px] font-bold">
-            <h1 className=" text-primary text-wrap">SIGMA VISA CONSULTANTS</h1>
+            <h1 className=" text-primary text-wrap">{about.header_one[t]}</h1>
           </div>
           <div className="mt-[30px] text-lg lg:w-[50%] ">
             <h1 className="text-[30px] lg:text-[50px] leading-snug">
-              Our Journey: Connecting Dreams Across Borders
+              {about.header_two[t]}
             </h1>
             <p className="mt-[30px]">
-              At Sigma Consultants, our story is one of bridging opportunities
-              and fostering new beginnings. For years, we&apos;ve been dedicated
-              to helping individuals and families find brighter prospects in
-              foreign lands, where opportunities await and dreams can become a
-              reality.
+              {about.description_one[t]}
             </p>
             <p></p>
           </div>
@@ -38,7 +34,7 @@ export default function About() {
         <div className="px-0 lg:px-0 w-[600px] lg:w-[1000px] xl:w-[1200px] h-fit z-0 flex justify-center items-center flex-col">
           <div className="text-[30px] lg:text-[60px] flex flex-col items-center font-extrabold text-center ">
             <h1 className="text-[#56c2f8] w-fit flex-none ">
-              Empowering Dreams, Connecting Worlds.
+              {about.header_three[t]}
             </h1>
           </div>
           <div className="h-fit w-full flex flex-col lg:flex-row flex-wrap gap-y-10 px-3 lg:px-0 justify-between mt-[50px] text-center lg:text-start">
@@ -61,8 +57,7 @@ export default function About() {
         <div className="w-[600px] lg:w-[1000px] xl:w-[1200px] px-4 lg:px-0 grid place-content-center text-center">
           <div className="py-[100px] lg:w-[1000px] xl:w-[1200px] ">
             <h1 className="text-[30px] lg:text-[50px] text-center font-extrabold ">
-              Explore Further Details About Our Extensive Array of Consulting
-              Services:
+              {about.header_four[t]}
             </h1>
             <div className="grid lg:grid-cols-2 xl:grid-cols-3 justify-items-center mt-10 gap-y-10 text-start">
               

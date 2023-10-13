@@ -7,32 +7,32 @@ export const siteConfig = {
     const items = [
       {
           en: "Home",
-          cn: '服务',
-          ne: "",
+          cn: '家',
+          ne: "घर",
           href: "/"
         },
         {
           en: "Consultancy Services",
-          cn: '行业',
-          ne: "",
+          cn: '咨询服务',
+          ne: "परामर्श सेवा",
           href: "/consultancy"
         },
         {
           en: "Maid Registration",
-          cn: '伙伴',
-          ne: "",
+          cn: '女佣登记',
+          ne: "दासी दर्ता",
           href: "/maid"
         },
         {
           en: "About",
           cn: '关于',
-          ne: "",
+          ne: "बारे",
           href: "/about"
         },
         {
           en: "Contact",
           cn: '接触',
-          ne: "",
+          ne: "सम्पर्क गर्नुहोस्",
           href: "/contact"
       },
     ]
