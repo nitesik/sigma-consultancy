@@ -315,7 +315,7 @@ export const maid_registration = {
   },
   description_one: {
     en: "Our maid registering form is a comprehensive tool designed to help you find the perfect domestic helper who meets your specific needs and preferences. By providing us with essential information through this form, you enable us to make the best match for you and ensure a successful hiring process.",
-    cn: "",
+    cn: "我们的女佣登记表是一个综合工具，旨在帮助您找到满足您特定需求和偏好的完美家庭佣工。通过此表格向我们提供重要信息，您使我们能够为您找到最合适的人选，并确保招聘流程成功。",
     ne: "हाम्रो दासी दर्ता फारम एक व्यापक उपकरण हो जुन तपाईलाई तपाईको विशिष्ट आवश्यकता र प्राथमिकताहरू पूरा गर्ने उत्तम घरेलु सहयोगी फेला पार्न मद्दत गर्नको लागि डिजाइन गरिएको हो। यस फारम मार्फत हामीलाई आवश्यक जानकारी प्रदान गरेर, तपाईंले हामीलाई तपाईंको लागि उत्तम मिलान बनाउन र सफल भर्ती प्रक्रिया सुनिश्चित गर्न सक्षम बनाउनुहुन्छ।"
   },
   full_name: {
@@ -390,7 +390,7 @@ export const maid_registration = {
   },
   message: {
     en: "Message",
-    cn: "",
+    cn: "信息",
     ne: "सन्देश"
   },
   submit: {
@@ -405,12 +405,12 @@ export const maid_registration = {
   },
   description_two: {
     en: "A well-structured and detailed maid registering form is crucial for both domestic helpers and employers. It helps employers make informed decisions when selecting a domestic helper by providing a clear overview of the maid's qualifications, experience, and expectations. For domestic helpers, it serves as a platform to showcase their skills and find suitable employment opportunities abroad.",
-    cn: "",
+    cn: "结构良好且详细的女佣登记表对于家庭佣工和雇主都至关重要。它通过清晰地概述女佣的资格、经验和期望，帮助雇主在选择女佣时做出明智的决定。对于家庭佣工来说，它是一个展示技能并在国外寻找合适就业机会的平台。",
     ne: "घरेलु कामदार र रोजगारदाता दुवैका लागि राम्रोसँग संरचित र विस्तृत दासी दर्ता फारम महत्त्वपूर्ण छ। यसले रोजगारदाताहरूलाई घरेलु कामदार छनोट गर्दा घरेलु कामदारको योग्यता, अनुभव र अपेक्षाहरूको स्पष्ट सिंहावलोकन प्रदान गरी सूचित निर्णयहरू गर्न मद्दत गर्छ। घरेलु सहयोगीहरूका लागि, यसले उनीहरूको सीप प्रदर्शन गर्न र विदेशमा उपयुक्त रोजगारीका अवसरहरू खोज्ने प्लेटफर्मको रूपमा काम गर्दछ।"
   },
   description_three: {
     en: "At Sigma Consultancy, we understand the importance of a comprehensive maid registering form and provide guidance and support to ensure that the information presented accurately represents the domestic helper's qualifications and preferences. Our goal is to facilitate successful matches that benefit both parties and create harmonious working relationships.",
-    cn: "",
+    cn: "在Sigma Consultancy, 我们了解全面的女佣登记表的重要性, 并提供指导和支持, 以确保所提供的信息准确代表家庭佣工的资格和偏好。我们的目标是促进成功的匹配, 使双方受益并建立和谐的工作关系。",
     ne: "सिग्मा कन्सल्टेन्सीमा, हामी एक व्यापक दासी दर्ता फारमको महत्त्व बुझ्छौं र प्रस्तुत जानकारीले घरेलु कामदारको योग्यता र प्राथमिकताहरूलाई सही रूपमा प्रतिनिधित्व गर्छ भनी सुनिश्चित गर्न मार्गदर्शन र समर्थन प्रदान गर्दछ। हाम्रो लक्ष्य दुबै पक्षहरूलाई फाइदा हुने र सामंजस्यपूर्ण काम गर्ने सम्बन्धहरू सिर्जना गर्ने सफल खेलहरूलाई सुविधा दिनु हो।"
   }
 }
@@ -501,7 +501,7 @@ export const about = {
 
   header_four: {
     en: "Explore Further Details About Our Extensive Array of Consulting Services:",
-    cn: "",
+    cn: "了解有关我们广泛的咨询服务的更多详细信息：",
     ne: "हाम्रो परामर्श सेवाहरूको विस्तृत एरे बारे थप विवरणहरू अन्वेषण गर्नुहोस्:"
   },
 
