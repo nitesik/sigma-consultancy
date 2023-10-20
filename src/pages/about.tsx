@@ -21,12 +21,9 @@ export default function About() {
             <h1 className="text-[30px] lg:text-[50px] leading-snug">
               {about.header_two[t]}
             </h1>
-            <p className="mt-[30px]">
-              {about.description_one[t]}
-            </p>
+            <p className="mt-[30px]">{about.description_one[t]}</p>
             <p></p>
           </div>
-          
         </div>
       </div>
 
@@ -60,7 +57,6 @@ export default function About() {
               {about.header_four[t]}
             </h1>
             <div className="grid lg:grid-cols-2 xl:grid-cols-3 justify-items-center mt-10 gap-y-10 text-start">
-              
               {about.offers.map((item) => (
                 <div
                   key={item.name.en}

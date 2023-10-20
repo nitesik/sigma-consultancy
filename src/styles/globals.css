@@ -11,7 +11,6 @@
 :root {
 }
 
-
 * {
   transition: all 200ms ease-in-out;
 }
@@ -26,8 +25,6 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-  
-
 }
 
 .firstImg {
