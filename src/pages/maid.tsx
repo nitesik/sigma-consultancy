@@ -10,7 +10,7 @@ export default function Maid() {
   const [toBeConfirmed, setToBeConfirmed] = useState(false);
 
   const router = useRouter();
-  
+
   const t = router.locale as keyof SiteConfig;
 
   return (
@@ -26,9 +26,7 @@ export default function Maid() {
             </h1>
           </div>
           <div className="mt-[30px] text-lg lg:w-[550px]">
-            <p className="">
-              {maid_registration.description_one[t]}
-            </p>
+            <p className="">{maid_registration.description_one[t]}</p>
           </div>
         </div>
       </div>
@@ -124,32 +122,40 @@ export default function Maid() {
                     name="nationality"
                     defaultChecked
                   />
-                  <label htmlFor="Indonesian">{maid_registration.indonesian[t]}</label>
+                  <label htmlFor="Indonesian">
+                    {maid_registration.indonesian[t]}
+                  </label>
                 </div>
                 <div className="flex gap-2">
                   <input
                     value="Filipino"
                     type="radio"
+                    id="Filipino"
                     name="nationality"
                     onChange={(e) => setNationality(e.target.value)}
                   />
-                  <label>{maid_registration.filipino[t]}</label>
+                  <label htmlFor="Filipino">
+                    {maid_registration.filipino[t]}
+                  </label>
                 </div>
                 <div className="flex gap-2">
                   <input
                     value="Others"
-                    id="otherNationality"
+                    id={nationality !== "Others" ? "otherNationality" : ""}
                     onChange={(e) => setNationality(e.target.value)}
                     type="radio"
                     name="nationality"
                   />
-                  <label>{maid_registration.others[t]}</label>
+                  <label htmlFor="otherNationality">
+                    {maid_registration.others[t]}
+                  </label>
                 </div>
               </div>
 
               {nationality !== "Filipino" && nationality !== "Indonesian" ? (
                 <input
                   type="text"
+                  id="otherNationality"
                   className="bg-[#f5f5f5] w-full py-4 px-3 mt-2 rounded border focus:border-primary outline-none"
                   onChange={(e) => setNationality(e.target.value)}
                 />
@@ -172,7 +178,9 @@ export default function Maid() {
                     name="contract"
                     defaultChecked
                   />
-                  <label htmlFor="finish">{maid_registration.finish_contract[t]}</label>
+                  <label htmlFor="finish">
+                    {maid_registration.finish_contract[t]}
+                  </label>
                 </div>
                 <div className="flex gap-2 items-start lg:items-center">
                   <input
@@ -183,7 +191,9 @@ export default function Maid() {
                     name="contract"
                     onChange={(e) => setContract(e.target.value)}
                   />
-                  <label htmlFor="terminate">{maid_registration.terminate_contract[t]}</label>
+                  <label htmlFor="terminate">
+                    {maid_registration.terminate_contract[t]}
+                  </label>
                 </div>
                 <div className="flex gap-2 items-start lg:items-center">
                   <input
@@ -194,7 +204,9 @@ export default function Maid() {
                     name="contract"
                     onChange={(e) => setContract(e.target.value)}
                   />
-                  <label htmlFor="not">{maid_registration.currently_not_in_hk[t]}</label>
+                  <label htmlFor="not">
+                    {maid_registration.currently_not_in_hk[t]}
+                  </label>
                 </div>
               </div>
             </div>
@@ -219,11 +231,14 @@ export default function Maid() {
                 <div className="flex gap-2">
                   <input
                     type="checkbox"
+                    id="terminateDate"
                     name="termination"
                     checked={toBeConfirmed}
                     onChange={(e) => setToBeConfirmed(e.target.checked)}
                   />
-                  <label>{maid_registration.to_be_confirmed[t]}</label>
+                  <label htmlFor="terminateDate">
+                    {maid_registration.to_be_confirmed[t]}
+                  </label>
                 </div>
               </div>
             </div>
@@ -247,14 +262,12 @@ export default function Maid() {
           </form>
 
           <div className="mt-16 text-lg grid gap-7 px-5 lg:px-0 text-center lg:text-start">
-            <h1 className="text-[32px] font-semibold">{maid_registration.header_two[t]}</h1>
-            <p>
-              {maid_registration.description_two[t]}
-            </p>
+            <h1 className="text-[32px] font-semibold">
+              {maid_registration.header_two[t]}
+            </h1>
+            <p>{maid_registration.description_two[t]}</p>
 
-            <p>
-              {maid_registration.description_three[t]}
-            </p>
+            <p>{maid_registration.description_three[t]}</p>
           </div>
         </div>
       </div>

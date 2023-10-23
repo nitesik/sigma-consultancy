@@ -40,18 +40,24 @@ export default function Contact() {
         <div className="text-center w-full flex-none lg:text-start lg:w-[1000px] xl:w-[1200px] grid grid-cols-1 lg:grid-cols-2 m-[50px]">
           <div className="grid gap-8">
             <div className="grid">
-              <h1 className="text-[32px] font-bold text-primary">{contact.address[t]}</h1>
+              <h1 className="text-[32px] font-bold text-primary">
+                {contact.address[t]}
+              </h1>
               <p className="text-[18px]">Shop7, 1/f, Wun Fat Bldg</p>
               <p className="text-[18px]">8 Wang Fat Path, Yuen Long</p>
             </div>
             <div className="grid place-content-center lg:place-content-start">
-              <h1 className="text-[32px] font-bold text-primary">{contact.mobile[t]}</h1>
+              <h1 className="text-[32px] font-bold text-primary">
+                {contact.mobile[t]}
+              </h1>
               <Link href="tel:+852 5661 6822" className="text-[18px] w-fit">
                 +852 5661 6822
               </Link>
             </div>
             <div className="grid place-content-center lg:place-content-start">
-              <h1 className="text-[32px] font-bold text-primary">{contact.landline[t]}</h1>
+              <h1 className="text-[32px] font-bold text-primary">
+                {contact.landline[t]}
+              </h1>
               <Link href="tel:+852 2792 3633" className="text-[18px] w-fit">
                 +852 2792 3633
               </Link>
@@ -63,7 +69,9 @@ export default function Contact() {
               </Link>
             </div>
             <div className="grid place-content-center lg:place-content-start">
-              <h1 className="text-[32px] font-bold text-primary">{contact.email[t]}</h1>
+              <h1 className="text-[32px] font-bold text-primary">
+                {contact.email[t]}
+              </h1>
               <Link
                 href="mailto:prabin.malla@sigmaconsultantshk.com"
                 className="text-[18px] w-fit"
@@ -74,8 +82,9 @@ export default function Contact() {
           </div>
           <form className="lg:grid mt-10 lg:mt-0 px-5 flex flex-col items-start text-start  gap-5">
             <div className="flex flex-col flex-none w-full gap-2">
-              <label htmlFor="">{contact.first_name[t]}*</label>
+              <label htmlFor="firstName">{contact.first_name[t]}*</label>
               <input
+                id="firstName"
                 value={details?.firstName || ""}
                 onChange={(e) =>
                   setDetails({ ...details!, firstName: e.target.value })
@@ -85,8 +94,9 @@ export default function Contact() {
               />
             </div>
             <div className="flex flex-col gap-2 w-full">
-              <label htmlFor="">{contact.last_name[t]}*</label>
+              <label htmlFor="lastName">{contact.last_name[t]}*</label>
               <input
+                id="lastName"
                 value={details?.lastName || ""}
                 onChange={(e) =>
                   setDetails({ ...details!, lastName: e.target.value })
@@ -96,10 +106,11 @@ export default function Contact() {
               />
             </div>
             <div className="flex flex-col gap-2 w-full">
-              <label htmlFor="">{contact.email[t]}*</label>
+              <label htmlFor="email">{contact.email[t]}*</label>
               <input
+                id="email"
                 value={details?.email || ""}
-                  onChange={(e) =>
+                onChange={(e) =>
                   setDetails({ ...details!, email: e.target.value })
                 }
                 type="text"
@@ -107,8 +118,9 @@ export default function Contact() {
               />
             </div>
             <div className="flex flex-col gap-2 w-full">
-              <label htmlFor="">{contact.message[t]}*</label>
+              <label htmlFor="message">{contact.message[t]}*</label>
               <textarea
+                id="message"
                 value={details?.message || ""}
                 onChange={(e) =>
                   setDetails({ ...details!, message: e.target.value })
@@ -128,18 +140,10 @@ export default function Contact() {
           <h1 className="text-[32px] text-primary font-semibold mb-2">
             {contact.header_three[t]}
           </h1>
-          <p className="text-lg">
-            {contact.description_one[t]}
-          </p>
-          <p className="text-lg">
-            {contact.description_two[t]}
-          </p>
-          <p className="text-lg">
-            {contact.description_three[t]}
-          </p>
-          <p className="text-lg">
-            {contact.description_four[t]}
-          </p>
+          <p className="text-lg">{contact.description_one[t]}</p>
+          <p className="text-lg">{contact.description_two[t]}</p>
+          <p className="text-lg">{contact.description_three[t]}</p>
+          <p className="text-lg">{contact.description_four[t]}</p>
         </div>
       </div>
     </div>
