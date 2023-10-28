@@ -24,13 +24,13 @@ export default function Contact() {
         <title>Contact - Sigma Consultancy</title>
       </Head>
       <div className="px-3 lg:px-0 bg-background_3 pb-[100px] lg:bg-cover bg-no-repeat lg:bg-fixed lg:min-h-fit flex justify-center text-[#fff]">
-        <div className="text-center w-[600px] lg:text-start lg:w-[1000px] xl:w-[1200px] mt-[125px] lg:mt-[150px]">
+        <div className="text-center w-[600px] lg:text-start flex flex-col items-center lg:items-start lg:w-[1000px] xl:w-[1200px] mt-[125px] lg:mt-[150px]">
           <div className="mt-[30px] text-lg lg:w-[50%] ">
             <h1 className="text-[30px] lg:text-[50px] leading-snug">
               {contact.header_one[t]}
             </h1>
           </div>
-          <div className="text-[40px] w-[70%] lg:text-[80px] font-bold">
+          <div className="text-[40px] w-[80%] mt-5 lg:text-[80px] font-bold">
             <h1 className=" text-primary text-wrap">{contact.header_two[t]}</h1>
           </div>
         </div>

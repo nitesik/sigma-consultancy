@@ -19,7 +19,8 @@ export default function Footer() {
               width={175}
               height={226}
               alt="logo"
-              className="invert mb-5"
+              className="invert mb-5 cursor-pointer"
+              onClick={() => router.push("/")}
             />
             <p>Shop7, 1/f, Wun Fat Bldg</p>
             <p>8 Wang Fat Path, Yuen Long</p>
