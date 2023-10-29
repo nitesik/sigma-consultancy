@@ -63,7 +63,8 @@ export default function Footer() {
           </div>
         </div>
         <p className="w-full text-center mt-10">
-          © Copyright {new Date().getFullYear()} Sigma Consultancy
+          © Copyright {new Date().getFullYear()} SIGMA EMPLOYMENT & VISA
+          CONSULTANTS SERVICES
         </p>
       </div>
     </div>
