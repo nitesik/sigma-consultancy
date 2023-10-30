@@ -57,12 +57,12 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-3">
             <h1>CONTACT US</h1>
-            <p>+852 5661 6822</p>
-            <p>+852 2792 3633</p>
-            <p>+852 3925 7035</p>
+            <Link href={`tel:${"+852 5661 6822"}`}>+852 5661 6822</Link>
+            <Link href={`tel:${"+852 2792 3633"}`}>+852 2792 3633</Link>
+            <Link href={`tel:${"+852 3925 7035"}`}>+852 3925 7035</Link>
           </div>
         </div>
-        <p className="w-full text-center mt-10">
+        <p className="w-[300px] lg:w-full text-center mt-10">
           © Copyright {new Date().getFullYear()} SIGMA EMPLOYMENT & VISA
           CONSULTANTS SERVICES
         </p>
